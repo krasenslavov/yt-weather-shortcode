@@ -1,0 +1,431 @@
+/**
+ * YT Weather Shortcode - Styles
+ *
+ * @package YT_Weather_Shortcode
+ * @version 1.0.0
+ */
+
+/* Base widget styles */
+.yt-weather-widget {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	margin: 20px 0;
+}
+
+/* Error message */
+.yt-weather-error {
+	padding: 15px;
+	background: #f8d7da;
+	border: 1px solid #f5c6cb;
+	border-radius: 4px;
+	color: #721c24;
+	text-align: center;
+}
+
+/* Card style (default) */
+.yt-weather-card {
+	max-width: 350px;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: #fff;
+	border-radius: 15px;
+	padding: 25px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yt-weather-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.yt-weather-card .yt-weather-header {
+	margin-bottom: 20px;
+}
+
+.yt-weather-card .yt-weather-city {
+	font-size: 24px;
+	font-weight: 600;
+	margin: 0;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.yt-weather-card .yt-weather-body {
+	text-align: center;
+}
+
+.yt-weather-card .yt-weather-icon {
+	font-size: 80px;
+	line-height: 1;
+	margin-bottom: 15px;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.yt-weather-card .yt-weather-temp {
+	font-size: 56px;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 10px;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.yt-weather-card .yt-weather-unit {
+	font-size: 28px;
+	font-weight: 400;
+	margin-left: 5px;
+}
+
+.yt-weather-card .yt-weather-desc {
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	opacity: 0.9;
+	text-transform: capitalize;
+}
+
+.yt-weather-card .yt-weather-details {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.yt-weather-card .yt-weather-detail {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+}
+
+.yt-weather-card .yt-weather-detail-label {
+	font-size: 12px;
+	opacity: 0.8;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.yt-weather-card .yt-weather-detail-value {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/* Minimal style */
+.yt-weather-minimal {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 15px;
+	background: #f8f9fa;
+	border-radius: 8px;
+	border: 1px solid #dee2e6;
+	color: #333;
+	font-size: 14px;
+}
+
+.yt-weather-minimal .yt-weather-city {
+	font-weight: 600;
+	color: #495057;
+}
+
+.yt-weather-minimal .yt-weather-temp {
+	font-weight: 700;
+	font-size: 18px;
+	color: #667eea;
+}
+
+.yt-weather-minimal .yt-weather-icon {
+	font-size: 24px;
+	line-height: 1;
+}
+
+/* Detailed style */
+.yt-weather-detailed {
+	max-width: 400px;
+	background: #ffffff;
+	border-radius: 15px;
+	padding: 30px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	border: 1px solid #e9ecef;
+}
+
+.yt-weather-detailed .yt-weather-header {
+	margin-bottom: 25px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #667eea;
+}
+
+.yt-weather-detailed .yt-weather-city {
+	font-size: 26px;
+	font-weight: 700;
+	margin: 0;
+	color: #2c3e50;
+}
+
+.yt-weather-detailed .yt-weather-body {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.yt-weather-detailed .yt-weather-icon {
+	font-size: 100px;
+	line-height: 1;
+	margin-bottom: 20px;
+	filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.1));
+}
+
+.yt-weather-detailed .yt-weather-temp {
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 15px;
+	color: #667eea;
+}
+
+.yt-weather-detailed .yt-weather-unit {
+	font-size: 32px;
+	font-weight: 400;
+	margin-left: 8px;
+	color: #6c757d;
+}
+
+.yt-weather-detailed .yt-weather-desc {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	color: #495057;
+	text-transform: capitalize;
+}
+
+.yt-weather-detailed .yt-weather-details {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.yt-weather-detailed .yt-weather-detail {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	background: #f8f9fa;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.yt-weather-detailed .yt-weather-detail-label {
+	font-size: 12px;
+	color: #6c757d;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-bottom: 8px;
+	font-weight: 600;
+}
+
+.yt-weather-detailed .yt-weather-detail-value {
+	font-size: 18px;
+	font-weight: 700;
+	color: #2c3e50;
+}
+
+.yt-weather-detailed .yt-weather-extra {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #e9ecef;
+}
+
+.yt-weather-detailed .yt-weather-extra .yt-weather-details {
+	grid-template-columns: 1fr;
+}
+
+/* Dark mode variants */
+@media (prefers-color-scheme: dark) {
+	.yt-weather-minimal {
+		background: #343a40;
+		border-color: #495057;
+		color: #f8f9fa;
+	}
+
+	.yt-weather-minimal .yt-weather-city {
+		color: #f8f9fa;
+	}
+
+	.yt-weather-detailed {
+		background: #212529;
+		border-color: #495057;
+	}
+
+	.yt-weather-detailed .yt-weather-city {
+		color: #f8f9fa;
+	}
+
+	.yt-weather-detailed .yt-weather-desc {
+		color: #adb5bd;
+	}
+
+	.yt-weather-detailed .yt-weather-detail {
+		background: #343a40;
+	}
+
+	.yt-weather-detailed .yt-weather-detail-label {
+		color: #adb5bd;
+	}
+
+	.yt-weather-detailed .yt-weather-detail-value {
+		color: #f8f9fa;
+	}
+}
+
+/* Animations */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.yt-weather-widget {
+	animation: fadeIn 0.5s ease-out;
+}
+
+/* Loading state */
+.yt-weather-loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+	color: #6c757d;
+	font-size: 14px;
+}
+
+.yt-weather-loading::after {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 3px solid #f3f3f3;
+	border-top: 3px solid #667eea;
+	border-radius: 50%;
+	animation: spin 0.8s linear infinite;
+	margin-left: 10px;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/* Responsive design */
+@media screen and (max-width: 480px) {
+	.yt-weather-card {
+		max-width: 100%;
+		padding: 20px;
+	}
+
+	.yt-weather-card .yt-weather-city {
+		font-size: 20px;
+	}
+
+	.yt-weather-card .yt-weather-icon {
+		font-size: 60px;
+	}
+
+	.yt-weather-card .yt-weather-temp {
+		font-size: 48px;
+	}
+
+	.yt-weather-card .yt-weather-unit {
+		font-size: 24px;
+	}
+
+	.yt-weather-card .yt-weather-desc {
+		font-size: 16px;
+	}
+
+	.yt-weather-card .yt-weather-details {
+		gap: 15px;
+	}
+
+	.yt-weather-detailed {
+		max-width: 100%;
+		padding: 20px;
+	}
+
+	.yt-weather-detailed .yt-weather-city {
+		font-size: 22px;
+	}
+
+	.yt-weather-detailed .yt-weather-icon {
+		font-size: 80px;
+	}
+
+	.yt-weather-detailed .yt-weather-temp {
+		font-size: 52px;
+	}
+
+	.yt-weather-detailed .yt-weather-unit {
+		font-size: 26px;
+	}
+
+	.yt-weather-detailed .yt-weather-details {
+		grid-template-columns: 1fr;
+	}
+
+	.yt-weather-minimal {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+/* Print styles */
+@media print {
+	.yt-weather-widget {
+		break-inside: avoid;
+	}
+
+	.yt-weather-card {
+		background: #fff !important;
+		color: #000 !important;
+		box-shadow: none !important;
+	}
+
+	.yt-weather-card .yt-weather-city,
+	.yt-weather-card .yt-weather-temp,
+	.yt-weather-card .yt-weather-desc {
+		text-shadow: none !important;
+	}
+}
+
+/* Accessibility */
+.yt-weather-widget:focus-within {
+	outline: 2px solid #667eea;
+	outline-offset: 4px;
+}
+
+.yt-weather-detail-label {
+	user-select: none;
+}
+
+/* Custom colors for different weather conditions */
+.yt-weather-card.yt-weather-sunny {
+	background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+
+.yt-weather-card.yt-weather-cloudy {
+	background: linear-gradient(135deg, #a8c0ff 0%, #3f2b96 100%);
+}
+
+.yt-weather-card.yt-weather-rainy {
+	background: linear-gradient(135deg, #667eea 0%, #517fa4 100%);
+}
+
+.yt-weather-card.yt-weather-snowy {
+	background: linear-gradient(135deg, #e0e0e0 0%, #a9c9d4 100%);
+}
+
+.yt-weather-card.yt-weather-stormy {
+	background: linear-gradient(135deg, #434343 0%, #000000 100%);
+}
