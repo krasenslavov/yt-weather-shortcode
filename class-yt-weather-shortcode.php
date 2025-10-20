@@ -3,7 +3,7 @@
  * Plugin Name: YT Weather Shortcode
  * Plugin URI: https://github.com/krasenslavov/yt-weather-shortcode
  * Description: Display current weather for any location using Open-Meteo API. Includes caching, Celsius/Fahrenheit toggle, and customizable display.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Requires at least: 5.8
  * Requires PHP: 7.4
  * Author: Krasen Slavov
@@ -921,9 +921,9 @@ class YT_Weather_Shortcode {
 	 * @return string Weather icon.
 	 */
 	private function get_weather_icon( $code ) {
-		if ( $code === 0 || $code === 1 ) {
+		if ( 0 === $code || 1 === $code ) {
 			return '☀️';
-		} elseif ( $code === 2 || $code === 3 ) {
+		} elseif ( 2 === $code || 3 === $code ) {
 			return '⛅';
 		} elseif ( $code >= 45 && $code <= 48 ) {
 			return '🌫️';
